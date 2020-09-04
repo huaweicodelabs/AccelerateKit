@@ -19,8 +19,8 @@
     1. Queues Create
     dispatch_queue_create(): creates queues.
     2. Push Work Items(blocks) into queues:
-    dispatch_async(): pushes work items into queue asynchronously.
-    dispatch_barrier_sync(): push work items into queue synchronously and make sure that all of work items, which has been pushed in the queue, should be finished.
+    dispatch_sync(): pushes work items into queue synchronously.
+    dispatch_apply(): synchronously executes a task repeatedly in a specified queue..
     3. Queues Release
     dispatch_release(): releases queues.
 
@@ -43,7 +43,7 @@
     Devices with Android 7.0 or later are recommended.
 
 ## Result
-    After the four tasks are executed concurrently, the other four tasks are executed in serial mode.
+    After the calculation, you'll get a number approximating to pi printed on the screen.
 
 ## License
     The sample of HUAWEI Accelerate Kit has obtained the [Apache 2.0 license.](http://www.apache.org/licenses/LICENSE-2.0).
